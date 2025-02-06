@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+</head>
+<body>
+    <div class="container">
+        <div class="info-section">
+            <h1 class="title">Real-Time Weather Forecast</h1>
+            <p class="subtitle">Get accurate weather updates for any location worldwide. Stay informed about temperature, humidity, wind speed, and more with our beautiful weather visualization.</p>
+            
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-location-dot"></i>
+                    <div class="feature-text">
+                        <h3>Location Based</h3>
+                        <p>Search any city globally</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-temperature-high"></i>
+                    <div class="feature-text">
+                        <h3>Real-Time Data</h3>
+                        <p>Live weather updates</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-wind"></i>
+                    <div class="feature-text">
+                        <h3>Detailed Info</h3>
+                        <p>Wind, humidity & more</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-cloud-sun"></i>
+                    <div class="feature-text">
+                        <h3>Visual Forecast</h3>
+                        <p>Beautiful animations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="weather-card">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Enter city name" class="input-box">
+            </div>
+
+            <div class="weather-display">
+                <div class="weather-icon">
+                    
+                    <img src="assets/clear.png" alt="Weather Icon" style="width: 100px; height: 100px;">
+
+                </div>
+                <div class="weather-info">
+                    <div class="temperature">24°C</div>
+                    <div class="description">Sunny</div>
+                    <div class="weather-details">
+                        <div class="detail">
+                            <i class="fas fa-droplet"></i>
+                            <div class="detail-value" id="humidity">45%</div>
+                            <div class="detail-label">Humidity</div>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-wind"></i>
+                            <div class="detail-value" id="wind-speed">12 km/h</div>
+                            <div class="detail-label">Wind Speed</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="location-not-found">
+                <h2>Location Not Found</h2>
+                <p>Please check the city name and try again</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
